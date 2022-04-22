@@ -1,8 +1,15 @@
+/*	
+ * Programmers
+ * Category	: Greedy
+ * Title	: 구명보트
+ */ 
+
 package Programmers.lv2;
+
 import java.util.*;
 
 public class Lifeboat {
-
+	
 	public static void main(String[] args) {
 		//input
 		int[] people = {70, 50, 80, 50};
@@ -11,6 +18,7 @@ public class Lifeboat {
 		System.out.println(s.solution(people, limit));
 		
 	}
+	
 }
 
 class Solution{
