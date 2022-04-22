@@ -2,7 +2,7 @@
  * Baekjoon Algorithm
  * Category	: Back Traking
  * Question	: 15649~15652
- * Title	: N과 M(1~4)
+ * Title	: N과 M(1~4) 수정
  */
 package Baekjoon.backtraking;
 
