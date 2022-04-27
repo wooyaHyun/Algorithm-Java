@@ -35,7 +35,7 @@ public class Q1181 {
 		*/
 		
 		//¶÷´Ù½Ä
-		Arrays.sort(str, (String s1, String s2)->{
+		Arrays.sort(str, (s1, s2)->{
 			if(s1.length() > s2.length()) return 1;
 			else if (s1.length() ==  s2.length()) return s1.compareTo(s2);
 			return -1;
