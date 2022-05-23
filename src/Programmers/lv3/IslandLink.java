@@ -43,12 +43,6 @@ class Solution {
         int answer = 0;
         
         Arrays.sort(costs, (c1, c2)-> c1[2]-c2[2]);
-//        for(int[] n1 : costs) {
-//        	for(int n2: n1) {
-//        		System.out.print(n2 + " ");
-//        	}
-//        	System.out.println();
-//        }
         
         parent = new int[n];
         for(int i = 0; i < n; i++) {
