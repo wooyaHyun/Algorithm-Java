@@ -25,7 +25,7 @@ public class Knum {
 
 class Solution{
 	
-	public int[] solution(int[] array, int[][] commands) {
+	public int[] solution(int[] array, int[][] commands){
 		int[] answer = new int[commands.length];
 		
 		for(int i = 0; i < commands.length; i++) {

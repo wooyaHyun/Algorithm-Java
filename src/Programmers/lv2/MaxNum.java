@@ -27,7 +27,7 @@ public class MaxNum {
 }
 
 class Solution2{
-	public String solution(int[] numbers) {
+	public String solution(int[] numbers){
         String answer = "";
         
         List<Integer> list = new ArrayList<>();
