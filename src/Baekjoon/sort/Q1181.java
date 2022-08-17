@@ -18,7 +18,7 @@ public class Q1181 {
 		
 		List<String> list = new ArrayList<>();
 		
-		for(int i = 0; i < n; i++) {
+		for(int i = 0; i < n; i++ ) {
 			list.add(sc.next());
 		}
 		//Set 을 이용하여 중복 제거
