@@ -10,7 +10,7 @@ import java.util.*;
 
 public class Knum {
 	
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		Solution s = new Solution();
 		int[] array = {1, 5, 2, 6, 3, 7, 4};
 		int[][] commands = {
