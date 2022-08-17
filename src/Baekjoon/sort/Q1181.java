@@ -12,44 +12,32 @@ import java.util.*;
 public class Q1181 {
 
 	public static void main(String[] args) {
-		Scanner sc =new Scanner(System.in);
+Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
 		
-		String[] str = new String[n];
+		List<String> list = new ArrayList<>();
 		
-		for(int i =0; i < n; i++) {
-			str[i] = sc.next();
+		for(int i = 0; i < n; i++) {
+			list.add(sc.next());
 		}
+		//Set 을 이용하여 중복 제거
+		Set<String> set = new HashSet<String>(list);
+		//set -> list 로 변환
+		List<String> lst = new ArrayList<String>(set);
 		
-		/* 기본 Array 정렬 방식
-		Arrays.sort(str, new Comparator<String>(){
-			@Override
-			public int compare(String s1, String s2) {
-				if(s1.length() > s2.length()) return 1;
-				else if (s1.length() ==  s2.length()) return s1.compareTo(s2);
-				return -1;
+		Collections.sort(lst, (String s1, String s2) -> {
+			if(s1.length() > s2.length()) {
+				return 1;
 			}
-			
-		});
-		*/
-		
-		//람다식
-		Arrays.sort(str, (s1, s2)->{
-			if(s1.length() > s2.length()) return 1;
-			else if (s1.length() ==  s2.length()) return s1.compareTo(s2);
+			else if(s1.length() == s2.length()) {
+				return s1.compareTo(s2);
+			}
 			return -1;
 		});
 		
-		for(int i =0; i < n; i++) {
-			if(i == 0) {
-				System.out.println(str[i]);
-				continue;
-			}
-			if(str[i-1].equals(str[i])) {
-				continue;
-			}
-			System.out.println(str[i]);
+		for(String s : lst) {
+			System.out.println(s);
 		}
 	}
 }
